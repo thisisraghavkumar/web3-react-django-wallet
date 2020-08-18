@@ -1,0 +1,21 @@
+{
+  "name": "wallet",
+  "version": "1.0.0",
+  "description": "A react based ethereum account profiler based on a sqlite database and served using django.",
+  "main": "index.js",
+  "dependencies": {
+    "create-react-app": "^3.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web3",
+    "django",
+    "react",
+    "ethereum"
+  ],
+  "author": "Raghav Kumar",
+  "license": "ISC"
+}
