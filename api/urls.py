@@ -15,20 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from webpage.views import index, profile
-from api.views import Contact, Transaction, IsContact
-from rest_framework.urlpatterns import format_suffix_patterns
-
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', index, name='index'),
-    path('profile/<str:address>',profile, name='profile'),
-    path('api/contact/', Contact.as_view(), name='api-contact'),
-    path('api/tx/', Transaction.as_view(), name='api-transaction'),
-    path('api/iscontact/', IsContact.as_view(), name='api-iscontact')
 ]
-
-urlpatterns = format_suffix_patterns(urlpatterns)
-
-
